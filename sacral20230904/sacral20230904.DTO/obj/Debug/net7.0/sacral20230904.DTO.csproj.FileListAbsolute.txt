@@ -1,0 +1,11 @@
+E:\Projects\Sacral\dotnet_service\Application.API\SacralAI.Code.Scheduler\bin\Debug\Apps\1\1511\202309045618\sacral20230904\sacral20230904.DTO\bin\Debug\net7.0\sacral20230904.DTO.deps.json
+E:\Projects\Sacral\dotnet_service\Application.API\SacralAI.Code.Scheduler\bin\Debug\Apps\1\1511\202309045618\sacral20230904\sacral20230904.DTO\bin\Debug\net7.0\sacral20230904.DTO.dll
+E:\Projects\Sacral\dotnet_service\Application.API\SacralAI.Code.Scheduler\bin\Debug\Apps\1\1511\202309045618\sacral20230904\sacral20230904.DTO\bin\Debug\net7.0\sacral20230904.DTO.pdb
+E:\Projects\Sacral\dotnet_service\Application.API\SacralAI.Code.Scheduler\bin\Debug\Apps\1\1511\202309045618\sacral20230904\sacral20230904.DTO\obj\Debug\net7.0\sacral20230904.DTO.GeneratedMSBuildEditorConfig.editorconfig
+E:\Projects\Sacral\dotnet_service\Application.API\SacralAI.Code.Scheduler\bin\Debug\Apps\1\1511\202309045618\sacral20230904\sacral20230904.DTO\obj\Debug\net7.0\sacral20230904.DTO.AssemblyInfoInputs.cache
+E:\Projects\Sacral\dotnet_service\Application.API\SacralAI.Code.Scheduler\bin\Debug\Apps\1\1511\202309045618\sacral20230904\sacral20230904.DTO\obj\Debug\net7.0\sacral20230904.DTO.AssemblyInfo.cs
+E:\Projects\Sacral\dotnet_service\Application.API\SacralAI.Code.Scheduler\bin\Debug\Apps\1\1511\202309045618\sacral20230904\sacral20230904.DTO\obj\Debug\net7.0\sacral20230904.DTO.csproj.CoreCompileInputs.cache
+E:\Projects\Sacral\dotnet_service\Application.API\SacralAI.Code.Scheduler\bin\Debug\Apps\1\1511\202309045618\sacral20230904\sacral20230904.DTO\obj\Debug\net7.0\sacral20230904.DTO.dll
+E:\Projects\Sacral\dotnet_service\Application.API\SacralAI.Code.Scheduler\bin\Debug\Apps\1\1511\202309045618\sacral20230904\sacral20230904.DTO\obj\Debug\net7.0\refint\sacral20230904.DTO.dll
+E:\Projects\Sacral\dotnet_service\Application.API\SacralAI.Code.Scheduler\bin\Debug\Apps\1\1511\202309045618\sacral20230904\sacral20230904.DTO\obj\Debug\net7.0\sacral20230904.DTO.pdb
+E:\Projects\Sacral\dotnet_service\Application.API\SacralAI.Code.Scheduler\bin\Debug\Apps\1\1511\202309045618\sacral20230904\sacral20230904.DTO\obj\Debug\net7.0\ref\sacral20230904.DTO.dll
