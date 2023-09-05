@@ -2,7 +2,6 @@
 using Microsoft.AspNetCore.Mvc;
 using sacral20230904.DTO;
 using sacral20230904.Service;
-using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace sacral20230904.API
@@ -18,62 +17,56 @@ namespace sacral20230904.API
             _documentVerificationService = documentVerificationService;
         }
 
-        [HttpGet("{id}")]
-        public async Task<IActionResult> GetById(int id)
+        [HttpPost]
+        public async Task<IActionResult> AddAsync(DocumentVerificationModel documentVerification)
         {
-            var documentVerification = await _documentVerificationService.GetById(id);
+            var id = await _documentVerificationService.AddAsync(documentVerification);
+            return Ok(id);
+        }
 
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetByIdAsync(int id)
+        {
+            var documentVerification = await _documentVerificationService.GetByIdAsync(id);
             if (documentVerification == null)
             {
                 return NotFound();
             }
-
             return Ok(documentVerification);
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetAll()
+        public async Task<IActionResult> GetAllAsync()
         {
-            var documentVerifications = await _documentVerificationService.GetAll();
-
+            var documentVerifications = await _documentVerificationService.GetAllAsync();
             return Ok(documentVerifications);
         }
 
-        [HttpPost]
-        public async Task<IActionResult> Create(DocumentVerificationModel documentVerification)
-        {
-            var id = await _documentVerificationService.Create(documentVerification);
-
-            return CreatedAtAction(nameof(GetById), new { id = id }, documentVerification);
-        }
-
         [HttpPut("{id}")]
-        public async Task<IActionResult> Update(int id, DocumentVerificationModel documentVerification)
+        public async Task<IActionResult> UpdateAsync(int id, DocumentVerificationModel documentVerification)
         {
-            if (id != documentVerification.Id)
-            {
-                return BadRequest();
-            }
-
-            var result = await _documentVerificationService.Update(documentVerification);
-
-            if (!result)
+            var existingDocumentVerification = await _documentVerificationService.GetByIdAsync(id);
+            if (existingDocumentVerification == null)
             {
                 return NotFound();
             }
+
+            documentVerification.Id = id;
+            await _documentVerificationService.UpdateAsync(documentVerification);
 
             return NoContent();
         }
 
         [HttpDelete("{id}")]
-        public async Task<IActionResult> Delete(int id)
+        public async Task<IActionResult> DeleteAsync(int id)
         {
-            var result = await _documentVerificationService.Delete(id);
-
-            if (!result)
+            var existingDocumentVerification = await _documentVerificationService.GetByIdAsync(id);
+            if (existingDocumentVerification == null)
             {
                 return NotFound();
             }
+
+            await _documentVerificationService.DeleteAsync(id);
 
             return NoContent();
         }
